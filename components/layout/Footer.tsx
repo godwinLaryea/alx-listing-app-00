@@ -1,4 +1,28 @@
-const Footer = () => {
+import { FooterLinksProps } from "@/interfaces";
+
+const FooterLinks: React.FC<FooterLinksProps> = ({ title, links }) => {
+  return (
+    <div className=" flex flex-col gap-6 list-none">
+      <h2 className="text-sm lg:text-2xl font-semibold">{title}</h2>
+      <div className="flex flex-col shrink-0 space-y-2 text-xs lg:text-sm">
+        <li>
+          <a href="#"></a>
+          {links.first}
+        </li>
+        <li>
+          <a href="#"></a>
+          {links.second}
+        </li>
+        <li>
+          <a href="#"></a>
+          {links.third}
+        </li>
+      </div>
+    </div>
+  );
+};
+
+const Footer: React.FC = () => {
   return (
     <footer className="bg-[#222222] text-[#CACACA] md:px-8">
       <div className="flex flex-col justify-between gap-8 px-4 pt-8 pb-24 min-h-[20rem] lg:flex-row">
@@ -41,59 +65,35 @@ const Footer = () => {
         </div>
 
         <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-8 items-start place-items-center ">
-          <div className=" flex flex-col gap-6 list-none">
-            <h2 className="text-sm lg:text-2xl font-semibold">Explore</h2>
-            <div className="flex flex-col shrink-0 space-y-2 text-xs lg:text-sm">
-              <li>
-                <a href="#"></a>Apartments in Dubai
-              </li>
-              <li>
-                <a href="#"></a>Hotels in New York
-              </li>
-              <li>
-                <a href="#"></a>Villa in Spain
-              </li>
-              <li>
-                <a href="#"></a>Mansion in Indonesia
-              </li>
-            </div>
-          </div>
+          <FooterLinks
+            title="Explore"
+            links={{
+              first: "Apartment in Dubai",
+              second: "Hotels in New York",
+              third: "Villa in Spain",
+              fourth: "Mansion in Indonesia",
+            }}
+          />
 
-          <div className=" flex flex-col gap-6 list-none">
-            <h2 className="text-sm lg:text-2xl font-semibold">Company</h2>
-            <div className="flex flex-col space-y-2 text-xs lg:text-sm">
-              <li>
-                <a href="#"></a>About Us
-              </li>
-              <li>
-                <a href="#"></a>Blog
-              </li>
-              <li>
-                <a href="#"></a>Career
-              </li>
-              <li>
-                <a href="#"></a>Customers
-              </li>
-              <li>
-                <a href="#"></a>Brand
-              </li>
-            </div>
-          </div>
+          <FooterLinks
+            title="Company"
+            links={{
+              first: "About us",
+              second: "Blog",
+              third: "Career",
+              fourth: "Customers",
+              fifth: "Brand",
+            }}
+          />
 
-          <div className=" flex flex-col gap-6 list-none">
-            <h2 className="text-sm lg:text-2xl font-semibold">Help</h2>
-            <div className="flex flex-col space-y-2 text-xs lg:text-sm">
-              <li>
-                <a href="#"></a>Support
-              </li>
-              <li>
-                <a href="#"></a>Cancel booking
-              </li>
-              <li>
-                <a href="#"></a>Refund process
-              </li>
-            </div>
-          </div>
+          <FooterLinks
+            title="Help"
+            links={{
+              first: "Support",
+              second: "Cancel booking",
+              third: "Refund process",
+            }}
+          />
         </div>
       </div>
 
