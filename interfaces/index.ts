@@ -17,3 +17,13 @@ export interface PropertyProps {
     discount?: string;
 }
 
+export interface FooterLinksProps {
+  title: string;
+  links: {
+    first: string;
+    second: string;
+    third: string;
+    fourth?: string;
+    fifth?: string;
+  }
+}
