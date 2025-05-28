@@ -1,4 +1,4 @@
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="min-h-[55px] w-full">
       <div className="flex justify-center items-center gap-4 bg-[#34967C] min-h-[50px] mb-2 px-4 md:px-8 py-8">
@@ -84,7 +84,11 @@ const Header = () => {
           </button>
         </nav>
         <div>
-          <img src="/assets/icons/profile.png" alt="User Profile Icon" className="size-[46px]"/>
+          <img
+            src="/assets/icons/profile.png"
+            alt="User Profile Icon"
+            className="size-[46px]"
+          />
         </div>
       </div>
 
@@ -179,7 +183,11 @@ const Header = () => {
 
         {/* USER PROFILE ICON MEDIUM SCREENS */}
         <div className="hidden md:block lg:hidden shrink-0">
-          <img src="/assets/icons/profile.png" alt="User Profile Icon" className="size-[46px]"/>
+          <img
+            src="/assets/icons/profile.png"
+            alt="User Profile Icon"
+            className="size-[46px]"
+          />
         </div>
       </nav>
 
