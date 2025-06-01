@@ -1,4 +1,4 @@
-import { PropertyProps } from "@/interfaces";
+import { PillProps, PropertyProps } from "@/interfaces";
 
 export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
   {
@@ -361,4 +361,15 @@ export const PROPERTYLISTINGSAMPLE: PropertyProps[] = [
     image: "https://example.com/image20.jpg",
     discount: "",
   },
+];
+
+export const Filters = [
+  "All",
+  "Top Villa",
+  "Free Schedule",
+  "Book Now, Pay Later",
+  "Self CheckIn",
+  "Instant Book",
+  "Filter",
+  "Sort by: Highest Price",
 ];
