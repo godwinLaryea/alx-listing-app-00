@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { myImages, IMAGE_PATHS } from "@/constants/images";
 import PropertyListing from "@/components/common/PropertyListing";
+import FilterSection from "@/components/layout/Filter";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
             </p>
           </div>
         </div>
+        <FilterSection />
         <PropertyListing />
       </section>
     </main>
