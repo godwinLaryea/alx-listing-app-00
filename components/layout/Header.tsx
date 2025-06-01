@@ -1,7 +1,7 @@
 const Header: React.FC = () => {
   return (
-    <header className="min-h-[55px] w-full">
-      <div className="flex justify-center items-center gap-4 bg-[#34967C] min-h-[50px] mb-2 px-4 md:px-8 py-8">
+    <header className="min-h-[55px] w-full mb-4">
+      <div className="flex justify-center items-center gap-4 bg-[#34967C] min-h-[50px] mb-2 px-4 md:px-8 py-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
