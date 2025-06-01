@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
               fill="#ffff"
             />
           </svg>
-          <p className="text-xs lg:text-sm leading-5 w-[70%]">
+          <p className="text-xs lg:text-sm leading-5 w-[85%]">
             ALX is a platform where travelers can discover and book unique,
             comfortable, and affordable lodging options worldwide. From cozy
             city apartments and tranquil countryside retreats to exotic
