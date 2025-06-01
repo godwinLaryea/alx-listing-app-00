@@ -1,11 +1,12 @@
 import Header from "./Header";
 import Footer from "./Footer";
+import Home from "@/pages";
 
 const Layout: React.FC = () => {
   return (
     <>
       <Header />
-      <main className="min-h-screen"></main>
+      <Home />
       <Footer />
     </>
   );
